@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p>Write a JavaScript function to check whether an `input` is an array or not<br>
+      Test Data :<br>
+      console.log(is_array('w3resource'));<br>
+      console.log(is_array([1, 2, 4, 0]));<br>
+      false<br>
+      True<br>
+    </p>
+</body>
+<script>
+    var is_array = function(aa) {
+  if (toString.call(aa) === "[object Array]")
+    return true;
+  return false;   
+    };
+document.write(is_array('w3resource'));
+document.write(is_array([1, 2, 4, 0]));
+</script>
+</html>
